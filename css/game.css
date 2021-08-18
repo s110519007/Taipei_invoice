@@ -1,0 +1,202 @@
+.container{
+    padding-bottom: 13%;
+}
+.alert-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    z-index: 20;
+}
+.alert{
+    position: fixed;
+    left: 35.5%;
+    top: 40%;
+    padding: 2.5%;
+    background-color: #269ac5;
+    width: 25%;
+    height: 15%;
+    z-index: 10;
+    border-radius: 2em;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    text-align: center;
+}
+.donate-num,.quota{
+    color: #ffd039;
+}
+.sure{
+    position: absolute;
+    left: 25%;
+    top: 65%;
+    cursor: pointer;
+    width: 20%;
+    padding: 1.5% 0;
+    border-radius: 99em;
+    background-color: #e972b5;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    transition: all .3s;
+}
+.sure:hover{
+    background-color: #ffc7e0;
+    color: #007bbb;
+}
+.back{
+    position: absolute;
+    left: 60%;
+    top: 65%;
+    cursor: pointer;
+    width: 20%;
+    padding: 1.5% 0;
+    border-radius: 99em;
+    background-color: #06579c;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    transition: all .3s;
+}
+.back:hover{
+    background-color: #d6f1fa;
+    color: #007bbb;
+}
+.main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/rays.png) center center no-repeat;
+    background-position: 0 0;
+    background-size: 100% 120%;
+}
+.article{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.article-bg{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.article-bg .dog{
+    position: absolute;
+    width: 100%;
+    bottom: 80%;
+    left: 8%;
+    background: url(../images/DOG.png) center no-repeat;
+    padding-bottom: 12%;
+    background-size: contain;
+    z-index: 2;
+    animation: breath 3s ease-in-out 0.5s infinite;
+}
+.article-bg .dialog{
+    position: absolute;
+    bottom: 80%;
+    left: -8%;
+    width: 100%;
+    padding-bottom: 10%;
+    background: url(../images/game-dialog.png) center no-repeat;
+    background-size: contain;
+    z-index: 2;
+    animation: breath 5s ease-in-out 0.5s infinite;
+}
+.article-bg .ribbon{
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    padding-bottom: 25%;
+    background: url(../images/ribbon.png) center center no-repeat;
+    background-size: contain;
+    animation: breath 5s ease-in-out 1s infinite;
+}
+.article-bg .eggs{
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    padding-bottom: 22%;
+    background: url(../images/eggs.png) center center no-repeat;
+    background-size: contain;
+    animation: breath 6s ease-in-out 1s infinite;
+}
+.article .game{
+    position: absolute;
+    bottom: 360px;
+    left: 0;
+    width: 100%;
+    padding-bottom: 15%;
+    background: url(../images/scratchcard/scratchcard_cover.png) center center no-repeat;
+    background-size: contain;
+    z-index: 3;
+}
+.article .remark{
+    position: absolute;
+    bottom: 320px;
+    width: 100%;
+    text-align: center;
+    color: #004ea1;
+    font-size: 1em;
+    font-weight: bold;
+}
+.prize{
+    display: none;
+    position: fixed;
+    right: 2.5%;
+    bottom: 22%;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    background-color: #269ac5;
+    border-radius: 2em;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    z-index: 15;
+}
+.prize .content-title{
+    margin: 0;
+    padding: 5%;
+}
+.prize .content{
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #fff;
+}
+.prize .content span{
+    color: #ffd039;
+}
+.btn-prize{
+    cursor: pointer;
+    position: fixed;
+    bottom: 12%;
+    right: 2.5%;
+    width: 80px;
+    height: 80px;
+    border-radius: 99em;
+    background-color: #d6f1fa;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    transition: all .3s;
+    z-index: 16;
+    text-align: center;
+    line-height: 80px;
+    color: #004ea1;
+    font-weight: bold;
+}
+.btn-prize:hover{
+    background-color: #fff;
+}
+.btn-prize::after{
+    content: '';
+    position: fixed;
+    bottom: 12%;
+    right: 2.5%;
+    width: 80px;
+    height: 80px;
+    border-radius: 99em;
+    background: url(../images/icon-gift-02.png) center center no-repeat;
+    background-size: 55px auto;
+    opacity: .3;
+}

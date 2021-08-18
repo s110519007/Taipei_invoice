@@ -1,0 +1,126 @@
+/* lg - Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px){
+    .form__input,
+    .btn,
+    .form__file,
+    .form__browse{
+        font-size: 1em;
+    }
+}
+/* md - Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px){
+    .list .content-title{
+        font-size: 1.25em;
+    }
+    .list .content,.list p{
+        font-size: 1em;
+    }
+    .form__input,
+    .btn,
+    .form__file,
+    .form__browse{
+        font-size: 1em;
+    }
+    .form__input{
+        padding-left: 12%;
+    }
+}
+/* sm - Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px){
+    .list .content-title{
+        font-size: 1em;
+    }
+    .list .content,.list p{
+        font-size: 0.8em;
+    }
+    .form__input,
+    .btn,
+    .form__file,
+    .form__browse{
+        font-size: 1em;
+    }
+    .upload-file .list-item-wrap{
+      width: 70%;
+    }
+    .icon{
+        width: 35px;
+    }
+    .icon img{
+        width: 20px;
+    }
+    .form__file{
+        width: 60%;
+    }
+}
+/* xs - Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px){
+    .list .content-title{
+        font-size: 1em;
+    }
+    .list .content,.list p{
+        font-size: 0.8em;
+    }
+    .form__input,
+    .btn,
+    .form__file,
+    .form__browse{
+        font-size: .8em;
+    }
+    .form__input{
+      padding-left: 10%;
+    }
+    .form__file{
+      width: 55%;
+    }
+    .icon{
+        width: 30px;
+    }
+    .icon-wrap{
+        height: 43px;
+    }
+    .icon img{
+        width: 15px;
+    }
+    .btnGroup__double{
+        margin-top: 10px;
+    }
+    .btn{
+        padding: 5px;
+        width: 42%;
+        background-image: none;
+        text-align-last: center;
+    }
+    .btn:hover{
+        background-color: #d6f1fa;
+        animation: none;
+    }
+}
+@media (min-width: 1201px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* lg橫式 */
+@media (min-width: 992px) and (max-width: 1200px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* md橫式 */
+@media(min-width: 768px) and (max-width: 991px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* sm橫式 */
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* xs橫式 */
+@media(max-width: 575px) and (max-height: 750px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}

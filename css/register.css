@@ -1,0 +1,292 @@
+.article{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5% 0;
+}
+.list .remark{
+    margin: 0;
+    padding: 0;
+    margin-top: -2.5%;
+    text-align: center;
+    color: #ffb0dc;
+}
+.form__item{
+    width: 80%;
+    margin-left: 10%;
+}
+.form__wrap{
+    position: relative;
+    margin: 10px 0 20px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.form__input{
+    margin: 0;
+    padding: 15px;
+    padding-left: 10%;
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.25em;
+    color: #007bbb;
+    background-color: #fff;
+}
+input[type="email"]{
+    width: 90%;
+    max-width: 90%;
+}
+.upload-file .list-item{
+    padding-left: 10%;
+}
+.icon{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    background-color: #d6f1fa;
+}
+.icon img{
+    position: absolute;
+    margin: auto;
+    width: 25px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.link{
+  padding-left: 25px;
+  background: url(../images/hand.png) no-repeat;
+  color: #ffb0dc;
+  font-size: 1em;
+  transition: all .3s;
+}
+.link:hover{
+    background: url(../images/hand-hover.png) no-repeat;
+    color: #f7c7dc;
+}
+.form__address{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.form__addressCity,
+.form__addressDistrict{
+    cursor: pointer;
+    font-family: Microsoft JhengHei;
+    margin: 0;
+    padding: 15px 0;
+    padding-left: 10px;
+    width: 30%;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+}
+.form__addressPostcode{
+  width: 30%;
+}
+.form__addressPostcode .form__wrap{
+  margin: 0;
+}
+.form__addressPostcode .form__input{
+  padding-left: 30%;
+}
+.form__addressDetail{
+    width: 100%;
+    margin-top: 15px;
+}
+.form__checkboxBody{
+    display: none;
+}
+.form__checkboxBody:checked + label::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 1.5%;
+    border: #fff solid 2px;
+    border-top: none;
+    border-right: none;
+    height: 8px;
+    width: 18px;
+    transform: rotate(-45deg);
+}  
+.form__checkbox{
+    cursor: pointer;
+    border:#fff solid 1px;
+    border-radius: 99em;
+    height: 16px;
+    width: 16px;
+    margin: 22px 0 0;
+    margin-left: 1.5%;
+}
+.form__terms{
+    width: 98.5%;
+    margin: 20px 0 0;
+    margin-left: 1.5%;
+    font-size: 1em;
+}
+.form__policy{
+    display: flex;
+}
+.privacy{
+    color: #ffb0dc;
+    transition: all .3s;
+}
+.privacy:hover{
+    color: #f7c7dc;
+}
+.form__upfile{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+}
+.form__file{
+    width: 60%;
+    border-radius: 10px;
+}
+.form__browse{
+    cursor: pointer;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    padding: 15px 8%;
+    font-size: 1.25em;
+    background-color: #06579c;
+    border-radius: 10px;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    transition: all .3s;
+}
+.form__browse:hover{
+    background-color: #d6f1fa;
+    color: #007bbb;
+}
+.form__verifyInput{
+    padding-right: 200px;
+}
+.form__verify{
+    cursor: pointer;
+    width: 25%;
+    height: 100%;
+}
+.form__verify img{
+    position: absolute;
+    top: 5%;
+    right: 1%;
+    width: auto;
+    height: 90%;
+}
+.btnGroup__double{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+.btn{
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    padding-left: 11%;
+    width: 20%;
+    height: auto;
+    font-size: 1.25em;
+    line-height: 2.5em;
+    background: url(../images/arrow.svg) 90% center no-repeat;
+    background-color: #06579c;
+    border-radius: 99em;
+    color: #fff;
+    text-align: left;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    transition: all .3s;
+}
+.btn:hover{
+    animation: btn-hover 1s linear infinite;
+    color: #007bbb;
+}
+@keyframes btn-hover{
+    0%{
+        background: url(../images/arrow-hover.svg) 90% center no-repeat;
+        background-color: #d6f1fa;
+    }
+    100%{
+        background: url(../images/arrow-hover.svg) 95% center no-repeat;
+        background-color: #d6f1fa;
+    }
+}
+
+/* 沒填資料 */
+.error input,
+.error .notice,
+.error .form__addressCity,
+.error .form__addressDistrict{
+  color: rgb(233, 0, 0);
+}
+.error .form__wrap,
+.error .form__addressCity,
+.error .form__addressDistrict,
+.error .form__addressDetail .form__wrap,
+.error .form__addressPostcode .form__wrap,
+.error .form__checkbox{
+  border: 1px solid rgb(233, 0, 0);
+}
+.error input,.error .notice,.error input::placeholder{
+  color: rgb(233, 0, 0);
+}
+.error input:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+  color: rgb(233, 0, 0);
+} 
+.error input::-ms-input-placeholder{ /* Microsoft Edge */
+  color: rgb(233, 0, 0);
+}
+.error .form__barcode{
+  margin-bottom: 0;
+}
+.error .link{
+  display: block;
+  margin-top: 20px;
+}
+.error .form__address{
+  border: none;
+}
+.error .notice{
+  width: 100%;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.error .form__terms{
+  margin-top: 0;
+}
+.error .form__checkbox{
+  margin-top: 2px;
+} 
+.error .form__checkboxBody:checked + label::after {
+  content: '';
+  top: 0;
+}
+.form__barcode .notice{
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+.parsley-success .notice{
+  margin: 0;
+}

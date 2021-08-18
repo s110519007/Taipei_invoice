@@ -1,0 +1,294 @@
+.article{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.btn-count{
+  display: none;
+}
+.count{
+    position: fixed;
+    right: 5%;
+    top: 45%;
+    padding: 1% 2%;
+    width: 15%;
+    height: auto;
+    background-color: #269ac5;
+    border-radius: 1.25em;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    z-index: 5;
+}
+.count-item{
+    font-size: 1em;
+    line-height: 1.75em;
+}
+.count .btn-upgrade{
+    cursor: pointer;
+    border-radius: 99em;
+    text-align: center;
+    padding: 5%;
+    width: 70%;
+    margin: 20% 10% 10%;
+    background: url(../images/upgrade.png) 20px center no-repeat;
+    background-size: 20px 20px;
+    background-color: #e972b5;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    transition: all .3s;
+}
+.count .btn-upgrade:hover{
+    background-color: #ffc7e0;
+}
+.receipt-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 150px;
+    justify-content: flex-start;
+    background-color: #1d8ab1;
+}
+.receipt-wrap{
+    position: relative;
+    margin: 0;
+    padding: 2.5% 5%;
+    padding-right: 0;
+    width: 20%;
+}
+.receipt-wrap .time{
+    display: flex;
+    color: #ffb0dc;
+}
+.receipt-wrap .time .money{
+    margin-left: 10px;
+}
+.notenough{
+    color: #aaa;
+}
+.notenough .form__checkbox{
+    display: none;
+}
+.notenough .recipt-num{
+    padding-left: 0;
+}
+.notenough .time{
+    color: #aaa;
+}
+.form__checkboxBody{
+    display: none;
+}
+.form__checkbox{
+    position: absolute;
+    cursor: pointer;
+    border:#fff solid 1px;
+    border-radius: 99em;
+    height: 16px;
+    width: 16px;
+}
+.form__checkboxBody:checked + label::after {
+    content: '';
+    position: absolute;
+    top: -2.5px;
+    left: 0;
+    border: #fff solid 2px;
+    border-top: none;
+    border-right: none;
+    height: 8px;
+    width: 18px;
+    transform: rotate(-45deg);
+}  
+.recipt-num{
+    padding-left: 25px;
+}
+/* 頁碼 */
+.page{
+    margin: 2.5% 0 1.5%;
+    padding: 0 2.5%;
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+}
+.page .button{
+    cursor: pointer;
+    margin: 0;
+    padding: 5px;
+    width: 20%;
+    font-size: 1.25em;
+    line-height: 2.5em;
+    background-color: #06579c;
+    border-radius: 99em;
+    color: #fff;
+    text-align: center;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    transition: all .3s;
+}
+.page .button:hover{
+    background-color: #d6f1fa;
+    color: #007bbb;
+}
+.page .donate{
+    background-color: #e972b5;
+}
+.page .donate:hover{
+    background-color: #ffc7e0;
+    color: #fff;
+}
+.page .page-wrap{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+}
+.page-item{
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    background-color: #06579c;
+    border-radius: 99em;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    font-size: 1em;
+    line-height: 40px;
+    text-align: center;
+    transition: all .3s;
+}
+.data-show{
+    background-color: #e972b5;
+}
+.page-item:hover{
+    background-color: #d6f1fa;
+    color: #007bbb;
+}
+.first{
+    background: url(../images/first.png) center center no-repeat;
+    background-color: #06579c;
+}
+.first:hover{
+    background: url(../images/first-hover.png) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.previous{
+    background: url(../images/previous.png) center center no-repeat;
+    background-color: #06579c;
+}
+.previous:hover{
+    background: url(../images/previous-hover.png) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.next{
+    background: url(../images/next.png) center center no-repeat;
+    background-color: #06579c;
+}
+.next:hover{
+    background: url(../images/next-hover.png) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.last{
+    background: url(../images/last.png) center center no-repeat;
+    background-color: #06579c;
+}
+.last:hover{
+    background: url(../images/last-hover.png) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.data-show:hover{
+    background-color: #ffc7e0;
+    color: #fff;
+}
+.data{
+    margin: 0;
+    padding-bottom: 5%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25em;
+}
+.place{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.place p{
+    padding: 0;
+    width: 60%;
+    color: #ffc7e0;
+    text-align: center;
+    line-height: 100px;
+}
+.drop-wrap{
+    position: relative;
+    margin: 5% 5%;
+    padding: 0;
+    width: 80%;
+    height: 45;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.drop-wrap:before{
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #d6f1fa;
+    transition: all .3s;
+}
+.drop-wrap:hover:before{
+    background-color: #204267;
+}
+.drop-wrap .triangle{
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 30px;
+    width: 0;
+    height: 0;
+    border-width: 12px 8px 0 8px;
+    border-style: solid;
+    border-color: #269ac5 transparent transparent transparent;
+    transition: all .3s;
+  }
+.drop-wrap:hover .triangle{
+    border-color: #d6f1fa transparent transparent transparent;
+}
+.drop-wrap select{
+    position: absolute;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    padding-right: 10%;
+    font-size: 1.25em;
+    color: #999;
+    text-align: left;
+    opacity: 0;
+    border-radius: 10px;
+    font-family: Microsoft JhengHei;
+}
+.drop-wrap span{
+    position: absolute;
+    padding: 10px;
+    font-family: Microsoft JhengHei;
+    font-size: 1.25em;
+    color: #999;
+}
+.drop-wrap select option{
+    cursor: pointer;
+    margin: 0;
+    padding: 2.5% 0;
+    color: #007bbb;
+    background-color: #fff;
+    font-size: 1em;
+    border-bottom: 1px solid #007bbb;
+    transition: all .3s;
+    font-family: Microsoft JhengHei;
+    border: 1px solid #007bbb;
+}

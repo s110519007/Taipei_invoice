@@ -1,0 +1,207 @@
+.main-bg{
+    position: absolute;
+    bottom: 0;
+}
+.main-bg .top-wrap{
+    position: fixed;
+    top: 7.5%;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+}
+.main-bg .top-wrap .eggs{
+    position: relative;
+    top: 7.5%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-bottom: 38%;
+    opacity: 0.5;
+}
+.main-bg .top-wrap .eggs .egg{
+    position: absolute;
+}
+.top-wrap .eggs .egg:nth-child(1){
+    top: 0;
+    left: -19.5%;
+    width: 100%;
+    padding-bottom: 8.5%;
+    background: url(../images/eggs_01.png) center center no-repeat;
+    background-size: contain;
+    animation: breath 5s ease-in-out infinite;
+    -moz-animation: breath 5s ease-in-out infinite;
+    -webkit-animation: breath 5s ease-in-out infinite;;
+    z-index: 5;
+}
+.top-wrap .eggs .egg:nth-child(2){
+    top: 5%;
+    left: 37%;
+    width: 100%;
+    padding-bottom: 13.5%;
+    background: url(../images/eggs_02.png) center center no-repeat;
+    background-size: contain;
+    animation: breath 4s ease-in-out infinite;
+    -moz-animation: breath 4s ease-in-out infinite;
+    -webkit-animation: breath 4s ease-in-out infinite;
+}
+.top-wrap .eggs .egg:nth-child(3){
+    top: 20%;
+    left: -37%;
+    width: 100%;
+    padding-bottom: 13.5%;
+    background: url(../images/eggs_03.png) center center no-repeat;
+    background-size: contain;
+    animation: breath 6s ease-in-out infinite;
+    -moz-animation: breath 6s ease-in-out infinite;
+    -webkit-animation: breath 6s ease-in-out infinite;
+}
+.top-wrap .eggs .egg:nth-child(4){
+    top: 39%;
+    left: -24%;
+    width: 100%;
+    padding-bottom: 6.5%;
+    background: url(../images/eggs_04.png) center center no-repeat;
+    background-size: contain;
+    animation: breath 7s ease-in-out infinite;
+    -moz-animation: breath 7s ease-in-out infinite;
+    -webkit-animation: breath 7s ease-in-out infinite;
+}
+.top-wrap .eggs .egg:nth-child(5){
+    top: 43%;
+    left: 26%;
+    width: 100%;
+    padding-bottom: 7.5%;
+    background: url(../images/eggs_05.png) center center no-repeat;
+    background-size: contain;
+    animation: breath 5s ease-in-out infinite;
+    -moz-animation: breath 5s ease-in-out infinite;
+    -webkit-animation: breath 5s ease-in-out infinite;
+}
+.top-wrap .eggs .egg:nth-child(6){
+    top: 49.5%;
+    left: 35.7%;
+    width: 100%;
+    padding-bottom: 6%;
+    background: url(../images/eggs_06.png) center center no-repeat;
+    background-size: contain;
+    animation: breath 6s ease-in-out infinite;
+    -moz-animation: breath 6s ease-in-out infinite;
+    -webkit-animation: breath 6s ease-in-out infinite;
+}
+.top-wrap .eggs .egg:nth-child(7){
+    top: 72%;
+    left: -35%;
+    width: 100%;
+    padding-bottom: 10.5%;
+    background: url(../images/eggs_07.png) center center no-repeat;
+    background-size: contain;
+    animation: breath 4s ease-in-out 1.5s infinite;
+    -moz-animation: breath 4s ease-in-out 1.5s infinite;
+    -webkit-animation: breath 4s ease-in-out 1.5s infinite;
+}
+.top-wrap .eggs .egg:nth-child(8){
+    top: 70%;
+    left: 38.7%;
+    width: 100%;
+    padding-bottom: 8%;
+    background: url(../images/eggs_08.png) center center no-repeat;
+    background-size: contain;
+    animation: breath 7s ease-in-out 1.5s infinite;
+    -moz-animation: breath 7s ease-in-out 1.5s infinite;
+    -webkit-animation: breath 7s ease-in-out 1.5s infinite;
+}
+.main-bg .top-wrap .ribbon{
+    position: absolute;
+    top: 8.5%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-bottom: 28%;
+    background: url(../images/ribbon.png) center center no-repeat;
+    animation: breath 4s ease-in-out infinite;
+    -moz-animation: breath 4s ease-in-out infinite;
+    -webkit-animation: breath 4s ease-in-out infinite;
+}
+@keyframes breath{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.main-bg .bottom-wrap{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -5;
+}
+.main-bg .bottom-wrap .w{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    margin-top: 10%;
+    padding: 0;
+    width: 100%;
+    padding-top: 10%;
+    background: url(../images/W.png) top center repeat-x;
+    background-size: cover;
+}
+.main-bg .bottom-wrap .big-cloud{
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 200vw;
+    display: flex;
+}
+.main-bg .bottom-wrap .big-cloud-bg{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    padding-top: 12%;
+    background: url(../images/big-cloud.png) top center repeat-x;
+    background-size: cover;
+    animation: big-cloud 60s linear infinite;
+    -moz-animation: big-cloud 60s linear infinite;
+    -webkit-animation: big-cloud 60s linear infinite;
+}
+.big-cloud-bg:nth-child(2){
+    left: 99.8vw;
+}
+.main-bg .bottom-wrap .road{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 200vw;
+    display: flex;
+    z-index: 2;
+}
+.main-bg .bottom-wrap .road-bg{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    padding-top: 3%;
+    background: url(../images/road.png) bottom center repeat-x;
+    background-size: contain;
+    animation: big-cloud 90s linear infinite reverse;
+    -moz-animation: big-cloud 90s linear infinite reverse;
+    -webkit-animation: big-cloud 90s linear infinite reverse;
+}
+@keyframes big-cloud{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.road-bg:nth-child(2){
+    left: 99.8vw;
+}

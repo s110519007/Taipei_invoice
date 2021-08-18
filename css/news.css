@@ -1,0 +1,142 @@
+.container{
+    height: auto;
+    min-height: 100vh;
+}
+.article{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.news:nth-child(2){
+    margin-bottom: 13%;
+}
+.list-title-wrap{
+    position: relative;
+    margin: 0 auto;
+    padding: 2.5% 0;
+    padding-left: 12%;
+    width: 88%;
+    border-radius: 2em;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    z-index: 2;
+    background: url(../images/icon-egg-02.png) no-repeat;
+    background-position: 5% center;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.list-title-wrap .time{
+    color: #999;
+    font-size: 1em;
+}
+.list-title-wrap .list-title{
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.list-title-wrap .btn-fold{
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 35%;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/fold.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 99em;
+    transition: all .3s;
+}
+.list-title-wrap .btn-unfold{
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 35%;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/unfold.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 99em;
+    transition: all .3s;
+}
+.list-title-wrap .btn-fold:hover{
+    background-image: url(../images/fold-hover.png);
+}
+.list-title-wrap .btn-unfold:hover{
+    background-image: url(../images/unfold-hover.png);
+}
+.list{
+    margin: 0;
+    padding: 0;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: auto;
+    padding: 5%;
+    padding-top: 13%;
+    margin-top: -10%;
+    background-color: #269ac5;
+    border-radius: 2em;
+    z-index: -1;
+}
+.list .content{
+    font-size: 1.25em;
+    line-height: 1.75em;
+}
+/* lg - Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px){
+    .news:nth-child(2){
+        margin-bottom: 20%;
+    }
+}
+/* md - Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px){
+    .news:nth-child(2){
+        margin-bottom: 30%;
+    }
+}
+/* sm - Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px){
+    .news:nth-child(2){
+        margin-bottom: 20%;
+    }
+}
+/* xs - Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px){
+    .news:nth-child(2){
+        margin-bottom: 35%;
+    }
+    .list-title-wrap{
+        padding-left: 18%;
+        width: 82%;
+        background-position: 5% center;
+        background-size: auto 30px;
+    }
+    .list-title-wrap .list-title{
+        font-size: 1em;
+    }
+    .list-title-wrap .btn-fold,.list-title-wrap .btn-unfold{
+        width: 20px;
+        height: 20px;
+    }
+    .list{
+        padding: 5%;
+        padding-top: 10%;
+        width: 90%;
+        border-radius: 0 0 2em 2em;
+    }
+    .list .content{
+        -ms-word-break: break-all;
+        word-break: break-all;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+}
+@media (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}

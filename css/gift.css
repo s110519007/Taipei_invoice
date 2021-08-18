@@ -1,0 +1,133 @@
+.sub-title-switch:nth-child(1){
+    background: url(../images/icon-heart.png) 20% center no-repeat;
+    background-color: #fff;
+}
+.article{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.gift-flex{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 auto;
+}
+.gift-wrap{
+    width: 28%;
+    position: relative;
+    margin: 5% 0;
+    padding: 0 2.5%;
+    padding-bottom: 5%;
+}
+.gift-wrap .gift{
+    position: relative;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 99em;
+    overflow: hidden;
+}
+.gift-wrap .gift img{
+  width: 75%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.gift-wrap .gift .point{
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+    background: rgba(255, 176, 220, .7);
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1em;
+    color: #000;
+    font-weight: bold;
+}
+.gift-wrap .gift-name{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+.gift-wrap .need,.gift-wrap .have{
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.75em;
+}
+.gift-wrap .need{
+    margin-top: 2.5%;
+}
+.gift-wrap .btn-change{
+    position: absolute;
+    bottom: 0;
+    left: 19.5%;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 60%;
+    height: 40px;
+    background-color: #1d8eb8;
+    box-shadow: none;
+    border-radius: 99em;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 40px;
+    opacity: 0.5;
+}
+.gift-wrap .enough{
+    cursor: pointer;
+    background-color: #06579c;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    opacity: 1;
+}
+.remark{
+    padding: 5px 0;
+    text-align: center;
+    color: #ffd039;
+    font-size: 1em;
+}
+.btn-count{
+  display: none;
+}
+.count{
+    display: block;
+    position: fixed;
+    right: 5%;
+    top: 45%;
+    padding: 1% 2%;
+    width: 15%;
+    height: auto;
+    background-color: #269ac5;
+    border-radius: 1.25em;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    z-index: 5;
+}
+.count-item{
+    font-size: 1em;
+    line-height: 1.75em;
+}
+.count .btn-upgrade{
+    cursor: pointer;
+    border-radius: 99em;
+    text-align: center;
+    padding: 5%;
+    width: 70%;
+    margin: 20% 10% 10%;
+    background: url(../images/upgrade.png) 20px center no-repeat;
+    background-size: 20px 20px;
+    background-color: #e972b5;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    transition: all .3s;
+}
+.count .btn-upgrade:hover{
+    background-color: #ffc7e0;
+}

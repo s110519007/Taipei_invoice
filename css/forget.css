@@ -1,0 +1,15 @@
+.icon1{
+    background: url(../images/mail.png) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.icon2{
+    background: url(../images/lock.svg) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.icon3{
+    background: url(../images/num.svg) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.button-wrap input{
+    margin: 0;
+}

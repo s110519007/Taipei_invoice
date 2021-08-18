@@ -1,0 +1,218 @@
+.container{
+    min-height: 100vh;
+    height: auto;
+}
+.article{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.my-record{
+    margin: 0;
+    padding: 0;
+    padding: 30px 0;
+    display: flex;
+    width: 100%;
+}
+.my-record:nth-child(odd){
+    background-color: #1d8ab1;
+}
+.my-record:nth-child(1){
+    padding: 10px 0;
+}
+.my-record .record-item{
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.25em;
+}
+.my-record .record-item:nth-child(3){
+    width: 40%;
+}
+/* 頁碼 */
+.page{
+    margin: 2.5% 0 1.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.page-wrap{
+    padding: 0;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.page-item{
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    background-color: #06579c;
+    border-radius: 99em;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    font-size: 1em;
+    line-height: 40px;
+    text-align: center;
+    transition: all .3s;
+}
+.data-show{
+    background-color: #e972b5;
+}
+.page-item:hover{
+    background-color: #d6f1fa;
+    color: #007bbb;
+}
+.first{
+    background: url(../images/first.png) center center no-repeat;
+    background-color: #06579c;
+}
+.first:hover{
+    background: url(../images/first-hover.png) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.previous{
+    background: url(../images/previous.png) center center no-repeat;
+    background-color: #06579c;
+}
+.previous:hover{
+    background: url(../images/previous-hover.png) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.next{
+    background: url(../images/next.png) center center no-repeat;
+    background-color: #06579c;
+}
+.next:hover{
+    background: url(../images/next-hover.png) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.last{
+    background: url(../images/last.png) center center no-repeat;
+    background-color: #06579c;
+}
+.last:hover{
+    background: url(../images/last-hover.png) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.data-show:hover{
+    background-color: #ffc7e0;
+    color: #fff;
+}
+.data{
+    margin: 0;
+    margin-bottom: 5%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25em;
+}
+/* lg - Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px){
+    .list .my-record .record-item{
+        font-size: 1em;
+        line-height: 1em;
+    }
+    .data{
+        font-size: 1em;
+    }
+}
+/* md - Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px){
+    .list .my-record .record-item{
+        font-size: 1em;
+        line-height: 1em;
+    }
+    .data{
+        font-size: 1em;
+    }
+}
+/* sm - Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px){
+    .list .my-record .record-item{
+        font-size: 1em;
+        line-height: 1em;
+    }
+    .page{
+        margin: 5% 0;
+    }
+    .page .page-wrap{
+        width: 65%;
+    }
+    .data{
+        font-size: 1em;
+    }
+}
+/* xs - Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px){
+    .my-record,.record-item{
+        font-size: .6em;
+        line-height: .6em;
+    }
+    .list .my-record .record-item{
+        width: 25%;
+        padding: 0 5px;
+    }
+    .list .my-record .record-item:nth-child(2){
+        width: 30%;
+    }
+    .page{
+        font-size: 0.8em;
+    }
+    .page .page-wrap{
+        position: relative;
+        width: 35%;
+        height: 30px;
+    }
+    .page-item{
+        width: 30px;
+        height: 30px;
+        font-size: 1em;
+        line-height: 30px;
+        display: none;
+    }
+    .page-item img{
+        margin: 10px;
+    }
+    .xs-previous,
+    .xs-page-num,
+    .xs-next{
+        display: block;
+    }
+    .data{
+        font-size: .8em;
+    }
+}
+@media (min-width: 1201px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* lg橫式 */
+@media (min-width: 992px) and (max-width: 1200px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* md橫式 */
+@media(min-width: 768px) and (max-width: 991px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* sm橫式 */
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* xs橫式 */
+@media(max-width: 575px) and (max-height: 750px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}

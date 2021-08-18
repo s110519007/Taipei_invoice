@@ -1,0 +1,80 @@
+.sub-title-switch:nth-child(2){
+    background: url(../images/icon-dog.png) 15% center no-repeat;
+    background-color: #d6f1fa;
+    background-size: auto 55px;
+}
+.sub-title-switch:nth-child(3){
+    background: url(../images/icon-download.png) 15% center no-repeat;
+    background-color: #d6f1fa;
+    background-size: auto 55px;
+}
+.sub-title-switch{
+    position: relative;
+    cursor: pointer;
+    width: 25%;
+    padding: 3% 0;
+    padding-left: 5%;
+    background: url(../images/icon-egg.png) 15% center no-repeat;
+    background-size: auto 55px;
+    background-color: #d6f1fa;
+    color: #000;
+    font-size: 1.5em;
+    border-radius: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    transition: all .3s;
+}
+.list{
+    font-size: 1.25em;
+}
+.content-wrap{
+    margin: 0;
+    padding: 5%;
+}
+.list ul{
+    margin: 0;
+    padding: 0;
+}
+.list .content-title{
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.75em;
+    margin-bottom: 5%;
+}
+.list .content{
+    margin: 1.5% 0;
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 1.75em;
+}
+.list .content span{
+    margin-left: -60px;
+}
+#area2 .list .content{
+    margin-left: 60px;
+}
+.list .content a{
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 1.75em;
+    color: #fff;
+    transition: all .3s;
+}
+.list .content a:hover{
+    color: #d6f1fa;
+    text-decoration: underline;
+}
+#area3 .list .content{
+    margin: 0;
+    padding: 2.5% 0;
+    padding-left: 12.5%;
+    background: url(../images/icon-download.png) 5% center no-repeat;
+    background-size: 50px auto;
+}
+#area3 .content-wrap{
+    padding: 0;
+}
+#area3 .list .content:nth-child(odd){
+    background-color: #1d8ab1;
+}

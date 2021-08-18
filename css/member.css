@@ -1,0 +1,232 @@
+.sub-title-switch:nth-child(1){
+    background: url(../images/icon-heart.png) 15% center no-repeat;
+    background-color: #fff;
+}
+.article{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.my-prize-list{
+    overflow: hidden;
+}
+.list{
+    overflow: visible;
+}
+.list .my-prize:nth-last-child(1){
+    border-radius: 0 0 1.5em 1.5em;
+}
+.my-prize{
+    margin: 0;
+    padding: 30px 0;
+    display: flex;
+    width: 100%;
+}
+.my-prize:nth-child(1){
+    padding: 10px 0;
+}
+.my-prize:nth-child(odd){
+    background-color: #1d8ab1;
+}
+.list .my-prize .prize-item{
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.25em;
+}
+.list .my-prize .prize-item:nth-child(2){
+    width: 30%;
+}
+.list .my-prize .prize-item:nth-child(3){
+  width: 35%;
+}
+.list .my-prize .prize-item:nth-child(4){
+  width: 20%;
+}
+.note__wrap{
+    cursor: pointer;
+    position: relative;
+    width: 80%;
+    margin: -5% 10%;
+    border-radius: 0.625em;
+    overflow: hidden;
+}
+/* .note__wrap:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #d6f1fa;
+    transition: all .3s;
+}
+.note__wrap:after{
+    content: '';
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    width: 0;
+    height: 0;
+    border-width: 15px 10px 0 10px;
+    border-style: solid;
+    border-color: #269ac5 transparent transparent transparent;
+    transition: all .3s;
+} */
+.note{
+    cursor: pointer;
+    margin: 0;
+    padding: 5% 10px;
+    width: 100%;
+    overflow: hidden;
+    color: #999;
+    background-color: #fff;
+    font-size: 1.25em;
+    line-height: 1.25rem;
+    font-family: Microsoft JhengHei;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(75, 75, 75, 0.2);
+}
+.note__wrap:hover:before{
+    background-color: #204267;
+}
+.note__wrap:hover:after{
+    border-color: #d6f1fa transparent transparent transparent;
+}
+.note option{
+    cursor: pointer;
+    margin: 0;
+    padding: 20px 10px;
+    color: #007bbb;
+    background-color: #fff;
+    transition: all .3s;
+}
+.list .remark{
+    padding: 5px 0;
+    text-align: center;
+    background-color: #06579c;
+    color: #ffd039;
+    border-radius: 2em 2em 0 0;
+}
+#area2 .list{
+    overflow: hidden;
+}
+#area2 .list .my-prize{
+    padding: 30px 0;
+}
+#area2 .list .my-prize:nth-child(1){
+    padding: 10px 0;
+}
+#area2 .list .my-prize .prize-item{
+    width: 25%;
+}
+/* 頁碼 */
+.page{
+    margin: 2.5% 0 1.5%;
+    padding: 0 2.5%;
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+}
+.page .button{
+    cursor: pointer;
+    margin: 0;
+    padding: 5px;
+    width: 20%;
+    font-size: 1.25em;
+    line-height: 2.5em;
+    background-color: #06579c;
+    border-radius: 99em;
+    color: #fff;
+    text-align: center;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    transition: all .3s;
+}
+.page .button:hover{
+    background-color: #d6f1fa;
+    color: #007bbb;
+}
+.page .donate{
+    background-color: #e972b5;
+}
+.page .donate:hover{
+    background-color: #ffc7e0;
+    color: #fff;
+}
+.page .page-wrap{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+}
+.page-item{
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    background-color: #06579c;
+    border-radius: 99em;
+    box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    font-size: 1em;
+    line-height: 40px;
+    text-align: center;
+    transition: all .3s;
+}
+.data-show{
+    background-color: #e972b5;
+}
+.page-item:hover{
+    background-color: #d6f1fa;
+    color: #007bbb;
+}
+.first{
+    background: url(../images/first.png) center center no-repeat;
+    background-color: #06579c;
+}
+.first:hover{
+    background: url(../images/first-hover.png) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.previous{
+    background: url(../images/previous.png) center center no-repeat;
+    background-color: #06579c;
+}
+.previous:hover{
+    background: url(../images/previous-hover.png) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.next{
+    background: url(../images/next.png) center center no-repeat;
+    background-color: #06579c;
+}
+.next:hover{
+    background: url(../images/next-hover.png) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.last{
+    background: url(../images/last.png) center center no-repeat;
+    background-color: #06579c;
+}
+.last:hover{
+    background: url(../images/last-hover.png) center center no-repeat;
+    background-color: #d6f1fa;
+}
+.data-show:hover{
+    background-color: #ffc7e0;
+    color: #fff;
+}
+.data{
+    margin: 0;
+    padding-bottom: 5%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25em;
+}

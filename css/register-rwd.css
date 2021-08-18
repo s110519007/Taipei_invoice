@@ -1,0 +1,254 @@
+@media (min-width: 1201px) and (max-width: 1650px){
+    .form__input,
+    .btn,
+    .form__addressCity,
+    .form__addressDistrict,
+    .form__file,
+    .form__browse,
+    .link{
+        font-size: 1em;
+    }
+    .form__file{
+        width: 62.5%;
+    }
+    .form__verifyInput{
+        padding-right: 175px;
+    }
+}
+/* lg - Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px){
+    .list{
+        width: 60%;
+    }
+    .form__input,
+    .btn,
+    .form__addressCity,
+    .form__addressDistrict,
+    .form__file,
+    .form__browse,
+    .link{
+        font-size: 1em;
+    }
+    .form__input{
+        padding-left: 12%;
+    }
+    input[type="email"]{
+      width: 88%;
+      max-width: 88%;
+    }
+    .form__file{
+        width: 55%;
+    }
+    .form__addressPostcode .form__input{
+      padding-left: 40%;
+      padding-right: 5px;
+    }
+    .form__verifyInput{
+        padding-right: 175px;
+    }
+}
+/* md - Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px){
+    .list{
+        width: 70%;
+        margin-bottom: 30%;
+    }
+    .form__input,
+    .btn,
+    .form__addressCity,
+    .form__addressDistrict,
+    .form__file,
+    .form__browse,
+    .link{
+        font-size: 1em;
+    }
+    .icon{
+        width: 35px;
+    }
+    .icon img{
+        width: 20px;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+    .form__verifyInput{
+        padding-right: 175px;
+    }
+}
+/* sm - Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px){
+    .list{
+        width: 80%;
+    }
+    .list .remark,
+    .form__input,
+    .btn,
+    .form__addressCity,
+    .form__addressDistrict,
+    .form__file,
+    .form__browse,
+    .link,
+    .form__terms{
+        font-size: 0.8em;
+    }
+    .upload-file .list-item-wrap{
+        width: 70%;
+    }
+    .icon{
+        width: 35px;
+    }
+    .icon img{
+        width: 20px;
+    }
+    .form__file{
+        width: 55%;
+    }
+    .form__addressPostcode .form__input{
+      padding-left: 35%;
+      padding-right: 5px;
+    }
+    .form__verifyInput{
+        padding-right: 160px;
+    }
+}
+/* xs - Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px){
+    .list{
+        margin-top: 10px;
+        width: 90%;
+    }
+    .list .remark,
+    .form__input,
+    .btn,
+    .form__addressCity,
+    .form__addressDistrict,
+    .form__file,
+    .form__browse,
+    .link,
+    .form__terms{
+        font-size: 0.8em;
+    }
+    .list .remark{
+        margin-top: 5px;
+    }
+    .form__input{
+        padding-left: 15%;
+    }
+    input[type="email"]{
+      width: 85%;
+      max-width: 85%;
+    }
+    .form__file{
+        width: 45%;
+    }
+    .icon{
+        width: 30px;
+    }
+    .icon-wrap{
+        height: 43px;
+    }
+    .icon img{
+        width: 15px;
+    }
+    .form__barcode{
+        margin: 10px auto 5px;
+    }
+    .form__address{
+        margin-bottom: 5px;
+    }
+    .form__addressCity,
+    .form__addressDistrict{
+      width: 47.5%;
+    }
+    .form__addressPostcode{
+      width: 100%;
+    }
+    .form__addressPostcode .form__input{
+        padding-left: 15%;
+    }
+    .form__addressPostcode .form__wrap{
+      margin-top: 20px;
+    }
+    .form__terms{
+        margin: 10px 0 0;
+    }
+    .form__checkbox{
+        height: 12px;
+        width: 12px;
+        margin: 12px 1% 0;
+    }
+    .form__checkboxBody:checked + label::after{
+        content: '';
+        top: 12px;
+        left: 1%;
+        position: absolute;
+        height: 5px;
+        width: 12px;
+        transform: rotate(-45deg);
+    }
+    .link{
+        padding-bottom: 0;
+        background-size: 20px auto;
+    }
+    .form__verifyInput{
+        padding-right: 105px;
+    }
+    .form__verify img{
+        position: absolute;
+        top: 20%;
+        right: 1%;
+        width: auto;
+        height: 60%;
+    }
+    .btnGroup__double{
+        margin-top: 10px;
+    }
+    .btn{
+        padding: 5px;
+        width: 42%;
+        background-color: #06579c;
+        background-image: none;
+        text-align: center;
+        box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+    }
+    .btn:hover{
+        background-color: #d6f1fa;
+        animation: none;
+    }
+
+    /* 沒填資料 */
+    .error .notice{
+        font-size: 0.8rem;
+    }
+    .form__policy{
+        margin-top: 0;
+    }
+}
+@media (min-width: 1201px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* lg橫式 */
+@media (min-width: 992px) and (max-width: 1200px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* md橫式 */
+@media(min-width: 768px) and (max-width: 991px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* sm橫式 */
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* xs橫式 */
+@media(max-width: 575px) and (max-height: 750px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}

@@ -1,0 +1,189 @@
+/* lg - Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px){
+    .list .my-prize .prize-item{
+        font-size: 1em;
+        line-height: 1em;
+    }
+    .note{
+        font-size: 1rem;
+    }
+    .page .button{
+        width: 15%;
+        font-size: 1em;
+    }
+    .data{
+        font-size: 1em;
+    }
+}
+/* md - Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px){
+    .sub-title-switch:nth-child(1){
+        background-size: 40px 40px;
+    }
+    .list .my-prize .prize-item{
+        font-size: 1em;
+        line-height: 1em;
+    }
+    .note{
+        font-size: 1rem;
+    }
+    .note__wrap:after{
+        content: '';
+        border-width: 12px 8px 0 8px;
+    }
+    .page .button{
+        width: 15%;
+        font-size: 1em;
+    }
+    .data{
+        font-size: 1em;
+    }
+}
+/* sm - Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px){
+    .sub-title-switch:nth-child(1){
+        background-size: 40px 40px;
+    }
+    .list .my-prize .prize-item{
+        font-size: 1em;
+        line-height: 1em;
+    }
+    .list .my-prize .prize-item .button{
+        font-size: 1rem;
+    }
+    .prize-img{
+        width: 80px;
+        height: 80px;
+    }
+    .note__wrap:after{
+        content: '';
+        border-width: 12px 8px 0 8px;
+    }
+    .note{
+        padding: 5% 10px;
+        padding-right: 0;
+        font-size: 1em;
+    }
+    .gift-wrap{
+        padding-bottom: 5%;
+    }
+    .page .button{
+        width: 15%;
+        font-size: 1em;
+    }
+    .page{
+        margin: 5% 0;
+    }
+    .data{
+        font-size: 1em;
+    }
+}
+/* xs - Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px){
+    .sub-title-switch:nth-child(1){
+        background-size: auto 25px;
+    }
+    .my-prize,.prize-item{
+        font-size: .6em;
+        line-height: .6em;
+    }
+    .list .remark{
+        font-size: .8em;
+        border-radius: 20px 20px 0 0;
+    }
+    .list .my-prize .prize-item{
+        width: 20%;
+        padding: 0 5px;
+    }
+    .list .my-prize .prize-item:nth-child(2){
+        width: 25%;
+    }
+    .list .my-prize .prize-item:nth-child(3){
+      width: 35%;
+    }
+    .list .my-prize .prize-item:nth-child(4){
+      width: 20%;
+    }
+    
+    .note__wrap{
+        padding: 2.5% 0;
+        margin: 0 2.5%;
+        width: 95%;
+        border-radius: 8px;
+    }
+    .note__wrap:after{
+        content: '';
+        display: none;
+    }
+    .note{
+        padding: 2.5% 5px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-size: 1em;
+    }
+    .drop-title{
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+    }
+    .note__wrap:before{
+        content: '';
+        display: none;
+    }
+    /* 頁碼 */
+    .page{
+        font-size: 0.8em;
+    }
+    .page .button{
+        width: 30%;
+        font-size: 1em;
+    }
+    .page-item{
+        width: 30px;
+        height: 30px;
+        font-size: 1em;
+        line-height: 30px;
+        display: none;
+    }
+    .page-item img{
+        margin: 10px;
+    }
+    .xs-previous,
+    .xs-page-num,
+    .xs-next{
+        display: block;
+    }
+    .data{
+        font-size: .8em;
+    }
+}
+@media (min-width: 1201px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* lg橫式 */
+@media (min-width: 992px) and (max-width: 1200px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* md橫式 */
+@media(min-width: 768px) and (max-width: 991px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* sm橫式 */
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* xs橫式 */
+@media(max-width: 575px) and (max-height: 750px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}

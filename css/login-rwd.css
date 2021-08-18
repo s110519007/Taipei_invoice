@@ -1,0 +1,213 @@
+@media (min-width: 1201px) and (max-width: 1650px){
+    .form__input,.btn{
+        font-size: 1em;
+    }
+    .form__verifyInput{
+        padding-right: 180px;
+    }
+}
+/* lg - Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px){
+    .list{
+        width: 60%;
+    }
+    .form__input,
+    .btn,
+    .send .content{
+        font-size: 1em;
+    }
+    .send .list-title{
+      font-size: 1.25em;
+    }
+    .form__verifyInput{
+        padding-right: 175px;
+    }
+}
+/* md - Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px){
+    .list{
+        width: 70%;
+    }
+    .form__input,
+    .btn,
+    .send .content{
+        font-size: 1em;
+    }
+    .send .list-title{
+      font-size: 1.25em;
+    }
+    .send .btn-close{
+      top: 20px;
+      right: 30px;
+      width: 20px;
+      height: 20px;
+    }
+    .form__input{
+        padding-left: 12%;
+    }
+    input[type="email"]{
+      width: 88%;
+      max-width: 88%;
+    }
+    .icon{
+        width: 10%;
+    }
+    .icon1{
+        background-size: 30px 30px;
+    }
+    .icon2{
+        background-size: 30px 30px;
+    }
+    .icon3{
+        background-size: 30px 30px;
+    }
+    .form__verifyInput{
+        padding-right: 175px;
+    }
+}
+/* sm - Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px){
+    .container{
+        height: auto;
+        min-height: 100vh;
+    }
+    .list{
+        width: 80%;
+    }
+    .form__input,
+    .btn,
+    .send .content{
+      font-size: .8em;
+    }
+    .send .list-title{
+      font-size: 1em;
+    }
+    .send .btn-close{
+      top: 20px;
+      right: 30px;
+      width: 20px;
+      height: 20px;
+    }
+    .form__input{
+        padding-left: 12%;
+    }
+    input[type="email"]{
+      width: 88%;
+      max-width: 88%;
+    }
+    .icon{
+        width: 10%;
+    }
+    .icon1{
+        background-size: 25px 25px;
+    }
+    .icon2{
+        background-size: 25px 25px;
+    }
+    .icon3{
+        background-size: 25px 25px;
+    }
+    .form__verifyInput{
+        padding-right: 160px;
+    }
+}
+/* xs - Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px){
+    .list{
+        margin-top: 10px;
+        width: 90%;
+        height: auto;
+        margin-bottom: 35%;
+    }
+    .form__input,
+    .btn,
+    .send .content{
+      font-size: 0.8em;
+    }
+    .send .list{
+      padding: 20px 0;
+    }
+    .send .list-title{
+      font-size: 1.25em;
+    }
+    .send .btn-close{
+      top: 20px;
+      right: 30px;
+      width: 20px;
+      height: 20px;
+    }
+    .form__input{
+        padding-left: 20%;
+    }
+    input[type="email"]{
+      width: 80%;
+      max-width: 80%;
+    }
+    .form__wrap{
+        position: relative;
+        margin: 10px 5% 20px;
+        width: 90%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .icon{
+        width: 15%;
+    }
+    .icon1{
+        background-size: auto 25px;
+    }
+    .icon2{
+        background-size: auto 25px;
+    }
+    .icon3{
+        background-size: auto 25px;
+    }
+    .form__verifyInput{
+        padding-right: 105px;
+    }
+    .form__verify img{
+        position: absolute;
+        top: 20%;
+        right: 1%;
+        width: auto;
+        height: 60%;
+    }
+    .btnGroup__double{
+        margin-top: 10px;
+        margin-left: 5%;
+        width: 90%;
+    }
+    .btn{
+        padding: 5px;
+        width: 45%;
+        background-color: #e972b5;
+        background-image: none;
+        text-align: center;
+        box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+        transition: all .3s;
+    }
+    .btn:hover{
+        background-color: #ffc7e0;
+        animation: none;
+    }
+    .btn--second{
+        margin-left: 5%;
+        padding: 5px;
+        height: auto;
+        background-color: #06579c;
+    }
+    .btn--second:hover{
+        background-color: #d6f1fa;
+        animation: none;
+    }
+    /* 沒填資料 */
+    .error{
+        margin-bottom: 10px;
+    }
+    .error .notice{
+      width: 90%;
+      margin-left: 5%;
+      margin-top: -10px;
+      font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,113 @@
+.container{
+    height: auto;
+    min-height: 100vh;
+}
+.link-wrap{
+    padding: 5%;
+    background: url(../images/icon-egg-02.png) 2.5% center no-repeat;
+    background-size: 50px auto;
+}
+.link-wrap:nth-child(odd){
+    background-color: #1d8ab1;
+}
+.link-wrap a{
+    color: #fff;
+    padding-left: 7.5%;
+    font-size: 1.25em;
+    transition: all .3s;
+}
+.link-wrap a:hover{
+    color: #d6f1fa;
+    text-decoration: underline;
+}
+@media (min-width: 1201px) and (max-width: 1650px){
+    .link-wrap a{
+        color: #fff;
+        padding-left: 5%;
+        font-size: 1.25em;
+    }
+    .link-wrap{
+        padding: 5%;
+        background-size: 45px auto;
+    }
+}
+/* lg - Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px){
+    .link-wrap a{
+        color: #fff;
+        padding-left: 5%;
+        font-size: 1.25em;
+    }
+    .link-wrap{
+        padding: 5%;
+        background-size: 45px auto;
+    }
+}
+/* md - Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px){
+    .link-wrap a{
+        color: #fff;
+        padding-left: 5%;
+        font-size: 1.25em;
+    }
+    .link-wrap{
+        padding: 5%;
+        background-size: 40px auto;
+    }
+}
+/* sm - Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px){
+    .list{
+        width: 90%;
+    }
+    .link-wrap a{
+        color: #fff;
+        padding-left: 5%;
+        font-size: 1.25em;
+    }
+    .link-wrap{
+        padding: 5%;
+        background-size: 30px auto;
+    }
+}
+/* xs - Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px){
+    .link-wrap a{
+        color: #fff;
+        padding-left: 5%;
+        font-size: 1em;
+    }
+    .link-wrap{
+        padding: 5%;
+        background-size: 20px auto;
+    }
+}
+@media (min-width: 1201px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* lg橫式 */
+@media (min-width: 992px) and (max-width: 1200px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* md橫式 */
+@media(min-width: 768px) and (max-width: 991px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* sm橫式 */
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* xs橫式 */
+@media(max-width: 575px) and (max-height: 750px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}

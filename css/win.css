@@ -1,0 +1,185 @@
+.sub-title-switch:nth-child(1){
+    background: url(../images/icon-gift-01.png) 15% center no-repeat;
+    background-color: #fff;
+}
+.sub-title-switch:nth-child(2){
+    background: url(../images/icon-gift-02.png) 15% center no-repeat;
+    background-color: #d6f1fa;
+}
+.sub-title-switch .sub-triangle{
+    position: absolute;
+    top: 100%;
+    left: 48%;
+    width: 0;
+    height: 0;
+    border-width: 15px 8px 0 8px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    transition: all .3s;
+}
+.sub1 .sub-triangle{
+    display: block;
+}
+.sub2 .sub-triangle{
+    display: none;
+}
+.list-item{
+    margin: 0;
+    padding: 0;
+    margin-left: 5%;
+    width: 50%;
+}
+.list-item-title{
+    font-size: 1.5em;
+    line-height: 1.75em;
+    font-weight: bold;
+}
+.prize-wrap:nth-child(even){
+    background-color: #1d8ab1;
+}
+.prize-wrap{
+    display: flex;
+    padding: 5%;
+    text-align-last: left;
+}
+.prize-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 99em;
+    background-color: #d6f1fa;
+    overflow: hidden;
+}
+.prize-img img{
+    width: 80px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    object-fit: contain;
+}
+.prize{
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+.winner{
+    display: flex;
+    color: #ffd039;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+.winner .winner-name{
+    margin-right: 2.5%;
+}
+@media (min-width: 1201px) and (max-width: 1650px){
+    #area2 .list{
+        margin-bottom: 23%;
+    }
+}
+/* lg - Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px){
+    #area2 .list{
+        margin-bottom: 0;
+    }
+}
+/* md - Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px){
+    .sub-title-switch{
+        background: url(../images/icon-gift-01.png) 15% center no-repeat;
+        background-color: #fff;
+        background-size: auto 40px;
+    }
+    .sub-title-switch:nth-child(2){
+        background: url(../images/icon-gift-02.png) 15% center no-repeat;
+        background-color: #d6f1fa;
+        background-size: auto 40px;
+    }
+    .list-item .list-item-title{
+        font-size: 1.25em;
+    }
+    .list-item .prize,.list-item .winner{
+        font-size: 1em;
+    }
+    #area2 .list{
+        margin-bottom: 0;
+    }
+}
+/* sm - Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px){
+    .sub-title-switch:nth-child(1){
+        background: url(../images/icon-gift-01.png) 15% center no-repeat;
+        background-color: #fff;
+        background-size: auto 40px;
+    }
+    .sub-title-switch:nth-child(2){
+        background: url(../images/icon-gift-02.png) 15% center no-repeat;
+        background-color: #d6f1fa;
+        background-size: auto 40px;
+    }
+    .list-item .list-item-title{
+        font-size: 1.25em;
+    }
+    .list-item .prize,.list-item .winner{
+        font-size: 1em;
+    }
+    #area2 .list{
+        margin-bottom: 0;
+    }
+}
+/* xs - Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px){
+    .sub-title-switch:nth-child(1){
+        background: url(../images/icon-gift-01.png) 15% center no-repeat;
+        background-color: #fff;
+        background-size: auto 25px;
+    }
+    .sub-title-switch:nth-child(2){
+        background: url(../images/icon-gift-02.png) 15% center no-repeat;
+        background-color: #d6f1fa;
+        background-size: auto 25px;
+    }
+    .list-item .list-item-title{
+        font-size: 1em;
+    }
+    .list-item .prize,.list-item .winner{
+        font-size: 0.8em;
+    }
+    .prize-img{
+        width: 80px;
+        height: 80px;
+    }
+    .prize-img img{
+        width: 60px;
+    }
+    #area2 .list{
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 1201px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* lg橫式 */
+@media (min-width: 992px) and (max-width: 1200px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* md橫式 */
+@media(min-width: 768px) and (max-width: 991px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* sm橫式 */
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* xs橫式 */
+@media(max-width: 575px) and (max-height: 750px) and (orientation:landscape){
+    .container{
+        height: auto;
+        min-height: 100vh;
+    }
+}

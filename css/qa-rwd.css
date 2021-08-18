@@ -1,0 +1,148 @@
+@media (min-width: 1201px) and (max-width: 1650px){
+    .sub-title-switch{
+        background-size: auto 50px;
+    }
+    .sub-title-switch:nth-child(2),.sub-title-switch:nth-child(3){
+        background-size: auto 50px;
+    }
+}
+/* lg - Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px){
+    .subtitle-wrap{
+        width: 70%;
+    }
+    .sub-title-switch{
+        background-size: auto 35px;
+    }
+    .sub-title-switch:nth-child(2),.sub-title-switch:nth-child(3){
+        background-size: auto 35px;
+    }
+    #area3 .list .content{
+        background-size: 45px auto;
+    }
+}
+/* md - Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px){
+    .subtitle-wrap{
+        width: 90%;
+    }
+    .sub-title-switch{
+        font-size: 1.25em;
+        padding-left: 7%;
+        background-size: auto 40px;
+        background-position: 20% center;
+    }
+    .sub-title-switch:nth-child(2),.sub-title-switch:nth-child(3){
+        background-size: auto 40px;
+        background-position: 20% center;
+    }
+    .list .content-title,.list .content{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    #area3 .list .content{
+        background-size: 40px auto;
+    }
+}
+/* sm - Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px){
+    .list{
+        margin-bottom: 15%;
+    }
+    .subtitle-wrap{
+        width: 90%;
+    }
+    .sub-title-switch{
+        font-size: 1.25em;
+        padding-left: 7%;
+        background-size: auto 40px;
+        background-position: 15% center;
+    }
+    .sub-title-switch:nth-child(2),.sub-title-switch:nth-child(3){
+        background-size: auto 40px;
+        background-position: 15% center;
+    }
+    .list .content-title,.list .content{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .list .content span{
+        margin-left: -48px;
+    }
+    #area2 .list .content{
+        margin-left: 48px;
+    }
+    #area3 .list .content{
+        background-size: 30px auto;
+    }
+}
+/* xs - Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px){
+    .subtitle-wrap{
+        width: 95%;
+    }
+    .sub-title-switch{
+        font-size: 1em;
+        padding-left: 7%;
+        background-position: 10% center;
+        background-size: auto 23px;
+        border-radius: 1em;
+    }
+    .sub-title-switch:nth-child(2),.sub-title-switch:nth-child(3){
+        background-size: auto 23px;
+        background-position: 5% center;
+    }
+    .sub-title-switch .sub-triangle{
+        left: 45%;
+    }
+    .list{
+        margin-bottom: 33%;
+    }
+    .list .content-title,.list .content{
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    .list .content span{
+        margin-left: -48px;
+    }
+    #area2 .list .content{
+        margin-left: 48px;
+    }
+    #area3 .list .content{
+        background-size: 20px auto;
+    }
+    .list .content a{
+        font-size: 1rem;
+        line-height: 1.25em;
+    }
+}
+@media (min-width: 1201px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* lg橫式 */
+@media (min-width: 992px) and (max-width: 1200px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* md橫式 */
+@media(min-width: 768px) and (max-width: 991px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* sm橫式 */
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 900px) and (orientation:landscape){
+    .container{
+        height: auto;
+    }
+}
+/* xs橫式 */
+@media(max-width: 575px) and (max-height: 750px) and (orientation:landscape){
+    .container{
+        height: auto;
+        min-height: 100vh;
+    }
+}

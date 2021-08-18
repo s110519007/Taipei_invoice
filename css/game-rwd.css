@@ -1,0 +1,695 @@
+@media (min-width: 1201px) and (max-width: 1650px){
+    .alert{
+        left: 30%;
+        top: 40%;
+        width: 35%;
+        height: 15%;
+    }
+    .main{
+        background-size: 100% 115%;
+    }
+    .article-bg .dog{
+        padding-bottom: 15%;
+        bottom: 77%;
+        left: 10%;
+    }
+    .article-bg .dialog{
+        padding-bottom: 12%;
+        bottom: 80%;
+        left: -10%;
+    }
+    .article-bg .ribbon{
+        padding-bottom: 28%;
+        bottom: 45%;
+    }
+    .article-bg .eggs{
+        padding-bottom: 28%;
+        bottom: 45%;
+    }
+    .article .game{
+        bottom: 340px;
+        padding-bottom: 18%;
+    }
+    .article .remark{
+        position: absolute;
+        bottom: 280px;
+        width: 100%;
+        text-align: center;
+        color: #004ea1;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .prize{
+        position: fixed;
+        right: 2.5%;
+        bottom: 25%;
+        margin: 0;
+        padding: 0;
+        width: 32%;
+        background-color: #269ac5;
+        border-radius: 2em;
+        box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+        z-index: 5;
+    }
+    .prize .content-title{
+        margin: 0;
+        padding: 5%;
+    }
+    .prize .content{
+        font-size: 0.8em;
+        line-height: 1.5em;
+        color: #fff;
+    }
+    .btn-prize{
+        cursor: pointer;
+        position: fixed;
+        bottom: 12%;
+        right: 2.5%;
+        width: 80px;
+        height: 80px;
+        border-radius: 99em;
+        background-color: #d6f1fa;
+        box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+        transition: all .3s;
+        z-index: 10;
+        text-align: center;
+        line-height: 80px;
+        color: #004ea1;
+        font-weight: bold;
+    }
+    .btn-prize:hover{
+        background-color: #fff;
+    }
+    .btn-prize::after{
+        content: '';
+        position: fixed;
+        bottom: 12%;
+        right: 2.5%;
+        width: 80px;
+        height: 80px;
+        border-radius: 99em;
+        background: url(../images/icon-gift-02.png) center center no-repeat;
+        background-size: 55px auto;
+        opacity: .3;
+    }
+}
+/* lg - Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px){
+    .alert{
+        left: 30%;
+        top: 40%;
+        width: 35%;
+        height: 15%;
+    }
+    .main{
+        background-size: 100% 135%;
+    }
+    .article-bg .dog{
+        padding-bottom: 20%;
+        bottom: 72.5%;
+        left: 10%;
+    }
+    .article-bg .dialog{
+        padding-bottom: 15%;
+        bottom: 75%;
+        left: -15%;
+    }
+    .article-bg .ribbon{
+        padding-bottom: 30%;
+        bottom: 45%;
+    }
+    .article-bg .eggs{
+        padding-bottom: 30%;
+        bottom: 45%;
+    }
+    .article .game{
+        bottom: 22%;
+        padding-bottom: 20%;
+    }
+    .article .remark{
+        position: absolute;
+        bottom: 13%;
+        width: 100%;
+        text-align: center;
+        color: #004ea1;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .prize{
+        right: 2.5%;
+        bottom: 25%;
+        width: 35%;
+    }
+    .prize .content{
+        font-size: 0.8em;
+    }
+    .copyright{
+        bottom: 80px;
+    }
+    .info{
+        bottom: 60px;
+    }
+}
+/* md - Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px){
+    .container{
+        height: 100%;
+    }
+    .alert{
+        left: 22.5%;
+        top: 40%;
+        width: 50%;
+        height: 15%;
+        border-radius: 1em;
+    }
+    .main{
+        background-size: 100% 130%;
+    }
+    .article-bg .dog{
+        padding-bottom: 20%;
+        bottom: 75%;
+        left: 15%;
+    }
+    .article-bg .dialog{
+        padding-bottom: 20%;
+        bottom: 75%;
+        left: -15%;
+    }
+    .article-bg .ribbon{
+        padding-bottom: 37.5%;
+        bottom: 40%;
+    }
+    .article-bg .eggs{
+        padding-bottom: 37.5%;
+        bottom: 40%;
+    }
+    .article .game{
+        bottom: 25%;
+        padding-bottom: 20%;
+    }
+    .article .remark{
+        position: absolute;
+        bottom: 13%;
+        width: 100%;
+        text-align: center;
+        color: #004ea1;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .prize{
+        right: 2.5%;
+        bottom: 22%;
+        width: 35%;
+    }
+    .prize .content{
+        font-size: 0.8em;
+        line-height: 1.5em;
+    }
+    .copyright{
+        bottom: 70px;
+    }
+    .info{
+        bottom: 50px;
+    }
+}
+/* sm - Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px){
+    .alert{
+        left: 22.5%;
+        top: 40%;
+        width: 50%;
+        height: 15%;
+        border-radius: 1em;
+        font-size: 1em;
+    }
+    .sure{
+        width: 25%;
+        left: 37.5%;
+    }
+    .main{
+        background-size: 100% 125%;
+    }
+    .article-bg .dog{
+        padding-bottom: 25%;
+        bottom: 75%;
+        left: 15%;
+    }
+    .article-bg .dialog{
+        padding-bottom: 25%;
+        bottom: 75%;
+        left: -20%;
+    }
+    .article-bg .ribbon{
+        padding-bottom: 40%;
+        bottom: 48%;
+    }
+    .article-bg .eggs{
+        padding-bottom: 40%;
+        bottom: 48%;
+    }
+    .article .game{
+        bottom: 25%;
+        padding-bottom: 30%;
+    }
+    .article .remark{
+        position: absolute;
+        bottom: 13%;
+        width: 100%;
+        text-align: center;
+        color: #004ea1;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .prize{
+        right: 2.5%;
+        bottom: 25%;
+        width: 50%;
+    }
+    .prize .content{
+        font-size: 0.8em;
+        line-height: 1.5em;
+    }
+}
+/* xs - Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px){
+    .container{
+        height: 100vh;
+    }
+    .alert{
+        left: 7.5%;
+        top: 37.5%;
+        width: 80%;
+        height: 20%;
+        border-radius: 1em;
+        font-size: 1em;
+    }
+    .sure{
+        width: 25%;
+        top: 65%;
+        left: 25%;
+    }
+    .back{
+        width: 25%;
+        top: 65%;
+        left: 55%;
+    }
+    .main{
+        background-size: 100% 125%;
+    }
+    .article-bg .dog{
+        padding-bottom: 30%;
+        bottom: 80%;
+        left: 22%;
+    }
+    .article-bg .dialog{
+        padding-bottom: 30%;
+        bottom: 80%;
+        left: -20%;
+    }
+    .article-bg .ribbon{
+        padding-bottom: 45%;
+        bottom: 55%;
+    }
+    .article-bg .eggs{
+        padding-bottom: 45%;
+        bottom: 55%;
+    }
+    .article .game{
+        bottom: 30%;
+        padding-bottom: 40%;
+    }
+    .article .remark{
+        position: absolute;
+        bottom: 18%;
+        width: 100%;
+        text-align: center;
+        color: #004ea1;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+    .btn-prize{
+        cursor: pointer;
+        position: fixed;
+        bottom: 8%;
+        right: 2.5%;
+        width: 50px;
+        height: 50px;
+        border-radius: 99em;
+        background-color: #d6f1fa;
+        box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+        z-index: 10;
+        text-align: center;
+        line-height: 50px;
+        color: #004ea1;
+        font-size: 0.6em;
+        font-weight: bold;
+        transition: all .3s;
+    }
+    .btn-prize::after{
+        content: '';
+        position: fixed;
+        bottom: 8%;
+        right: 2.5%;
+        width: 50px;
+        height: 50px;
+        border-radius: 99em;
+        background: url(../images/icon-gift-02.png) center center no-repeat;
+        background-size: 30px auto;
+        opacity: .3;
+    }
+    .prize{
+        right: 2.5%;
+        bottom: 18%;
+        width: 95%;
+    }
+    .prize .content{
+        font-size: 0.8em;
+        line-height: 1.5em;
+    }
+}
+/* lg橫式 */
+@media (min-width: 992px) and (max-width: 1200px) and (max-height: 900px) and (orientation:landscape){
+    .alert-wrap{
+        height: 100%;
+        min-height: 900px;
+        background-color: rgba(0,0,0,.8);
+        z-index: 20;
+    }
+    .alert{
+        position: fixed;
+        left: 27.5%;
+        top: 40%;
+        width: 40%;
+        height: 15%;
+        border-radius: 1em;
+        font-size: 1em;
+    }
+    .sure{
+        width: 25%;
+        top: 60%;
+        left: 25%;
+    }
+    .back{
+        width: 25%;
+        top: 60%;
+        left: 55%;
+    }
+    .main{
+        height: 100%;
+        min-height: 900px;
+        background-size: 100% 140%;
+    }
+    .article-bg .dog{
+        padding-bottom: 20%;
+        bottom: 72.5%;
+        left: 15%;
+    }
+    .article-bg .dialog{
+        padding-bottom: 20%;
+        bottom: 72.5%;
+        left: -15%;
+    }
+    .article-bg .ribbon{
+        padding-bottom: 37.5%;
+        bottom: 36%;
+    }
+    .article-bg .eggs{
+        padding-bottom: 37.5%;
+        bottom: 36%;
+    }
+    .article .game{
+        bottom: 20%;
+        padding-bottom: 20%;
+    }
+}
+/* md橫式 */
+@media(min-width: 768px) and (max-width: 991px) and (max-height: 900px) and (orientation:landscape){
+    .alert-wrap{
+        height: 100%;
+        min-height: 900px;
+        background-color: rgba(0,0,0,.8);
+        z-index: 20;
+    }
+    .alert{
+        position: fixed;
+        left: 27.5%;
+        top: 35%;
+        width: 40%;
+        height: 25%;
+        border-radius: 1em;
+        font-size: 1em;
+    }
+    .sure{
+        width: 25%;
+        top: 60%;
+        left: 25%;
+    }
+    .back{
+        width: 25%;
+        top: 60%;
+        left: 55%;
+    }
+    .main{
+        height: 100%;
+        min-height: 900px;
+        background-size: 100% 130%;
+    }
+    .article-bg .dog{
+        padding-bottom: 20%;
+        bottom: 75%;
+        left: 15%;
+    }
+    .article-bg .dialog{
+        padding-bottom: 20%;
+        bottom: 75%;
+        left: -15%;
+    }
+    .article-bg .ribbon{
+        padding-bottom: 37.5%;
+        bottom: 40%;
+    }
+    .article-bg .eggs{
+        padding-bottom: 37.5%;
+        bottom: 40%;
+    }
+    .article .game{
+        bottom: 25%;
+        padding-bottom: 20%;
+    }
+    .btn-prize{
+        cursor: pointer;
+        position: fixed;
+        bottom: 20%;
+        right: 2.5%;
+        width: 80px;
+        height: 80px;
+        border-radius: 99em;
+        background-color: #d6f1fa;
+        box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+        transition: all .3s;
+        z-index: 10;
+        text-align: center;
+        line-height: 80px;
+        color: #004ea1;
+        font-weight: bold;
+    }
+    .btn-prize::after{
+        content: '';
+        position: fixed;
+        bottom: 20%;
+        right: 2.5%;
+        width: 80px;
+        height: 80px;
+        border-radius: 99em;
+        background: url(../images/icon-gift-02.png) center center no-repeat;
+        background-size: 55px auto;
+        opacity: .3;
+    }
+    .prize{
+        right: 15%;
+        bottom: 18%;
+        width: 80%;
+    }
+}
+/* sm橫式 */
+@media (min-width: 576px) and (max-width: 767px) and (max-height: 900px) and (orientation:landscape){
+    .alert-wrap{
+        height: 100%;
+        min-height: 900px;
+        background-color: rgba(0,0,0,.8);
+        z-index: 20;
+    }
+    .alert{
+        position: fixed;
+        left: 17.5%;
+        top: 32.5%;
+        width: 60%;
+        height: 30%;
+        border-radius: 1em;
+        font-size: 1em;
+    }
+    .sure{
+        width: 25%;
+        top: 60%;
+        left: 25%;
+    }
+    .back{
+        width: 25%;
+        top: 60%;
+        left: 55%;
+    }
+    .main{
+        height: 100%;
+        min-height: 900px;
+        background-size: 100% 130%;
+    }
+    .article-bg .dog{
+        padding-bottom: 25%;
+        bottom: 70%;
+        left: 22%;
+    }
+    .article-bg .dialog{
+        padding-bottom: 25%;
+        bottom: 70%;
+        left: -20%;
+    }
+    .article-bg .ribbon{
+        padding-bottom: 40%;
+        bottom: 40%;
+    }
+    .article-bg .eggs{
+        padding-bottom: 40%;
+        bottom: 40%;
+    }
+    .article .game{
+        bottom: 20%;
+        padding-bottom: 30%;
+    }
+    .article .remark{
+        position: absolute;
+        bottom: 8%;
+        width: 100%;
+        text-align: center;
+        color: #004ea1;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+    .btn-prize{
+        bottom: 15%;
+        right: 2.5%;
+    }
+    .btn-prize::after{
+        content: '';
+        position: fixed;
+        bottom: 15%;
+        right: 2.5%;
+        width: 80px;
+        height: 80px;
+        border-radius: 99em;
+        background: url(../images/icon-gift-02.png) center center no-repeat;
+        background-size: 55px auto;
+        opacity: .3;
+    }
+    .prize{
+        right: 15%;
+        bottom: 15%;
+        width: 80%;
+    }
+}
+/* xs橫式 */
+@media(max-width: 575px) and (max-height: 750px) and (orientation:landscape){
+    .alert-wrap{
+        height: 100%;
+        min-height: 750px;
+        background-color: rgba(0,0,0,.8);
+        z-index: 20;
+    }
+    .alert{
+        position: fixed;
+        left: 17.5%;
+        top: 25%;
+        width: 60%;
+        height: 45%;
+        border-radius: 1em;
+        font-size: 1em;
+    }
+    .sure{
+        width: 25%;
+        left: 25%;
+    }
+    .back{
+        width: 25%;
+        left: 55%;
+    }
+    .main{
+        height: 100%;
+        min-height: 750px;
+        background-size: 100% 135%;
+    }
+    .article-bg .dog{
+        padding-bottom: 30%;
+        bottom: 75%;
+        left: 22%;
+    }
+    .article-bg .dialog{
+        padding-bottom: 30%;
+        bottom: 75%;
+        left: -20%;
+    }
+    .article-bg .ribbon{
+        padding-bottom: 45%;
+        bottom: 35%;
+    }
+    .article-bg .eggs{
+        padding-bottom: 45%;
+        bottom: 35%;
+    }
+    .article .game{
+        bottom: 20%;
+        padding-bottom: 35%;
+    }
+    .article .remark{
+        position: absolute;
+        bottom: 8%;
+        width: 100%;
+        text-align: center;
+        color: #004ea1;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+    .btn-prize{
+        cursor: pointer;
+        position: fixed;
+        bottom: 20%;
+        right: 2.5%;
+        width: 50px;
+        height: 50px;
+        border-radius: 99em;
+        background-color: #d6f1fa;
+        box-shadow: 2.5px 4.3px 20px 0 rgba(4, 0, 0, 0.2);
+        z-index: 16;
+        text-align: center;
+        line-height: 50px;
+        color: #004ea1;
+        font-size: 0.6em;
+        font-weight: bold;
+        transition: all .3s;
+    }
+    .btn-prize::after{
+        content: '';
+        position: fixed;
+        bottom: 20%;
+        right: 2.5%;
+        width: 50px;
+        height: 50px;
+        border-radius: 99em;
+        background: url(../images/icon-gift-02.png) center center no-repeat;
+        background-size: 30px auto;
+        opacity: .3;
+    }
+    .prize{
+        right: 2.5%;
+        bottom: 18%;
+        width: 95%;
+    }
+}

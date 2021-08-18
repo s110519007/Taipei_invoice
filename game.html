@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺北市稅捐稽徵處-雲端發票刮刮樂</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index-ani.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/game-rwd.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/eggs_01.png" type="image/x-icon">
+</head>
+<body>
+    <!-- <div id="loading">正在加載中...
+        <img src="images/DOG.png" alt="">
+    </div> -->
+    <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="logo"></a>
+          <ul class="nav-wrap">
+              <li class="nav-list nav1"><a href="index.html">活動首頁</a></li>
+              <li class="nav-list nav2"><a style="cursor: context-menu;">會員專區</a>
+                  <div class="drop-down-wrap drop1">
+                      <div class="tooltip-top"></div>
+                      <div class="drop-down">
+                          <a href="register.html" class="d-start">活動註冊</a>
+                          <a href="login.html">活動登入</a>
+                          <a href="record.html">捐贈紀錄</a>
+                          <a href="member.html">兌獎紀錄</a>
+                          <a href="modify.html" class="d-end">會員資料修改</a>
+                      </div>
+                  </div>
+              </li>
+              <li class="nav-list nav3"><a style="cursor: context-menu;">參加活動</a>
+                  <div class="drop-down-wrap drop2">
+                      <div class="tooltip-top"></div>
+                      <div class="drop-down">
+                          <a href="method.html" class="d-start">活動辦法</a>
+                          <a href="donate.html">捐贈雲端發票</a>
+                          <a href="gift.html">積點換好禮</a>
+                          <a href="game.html">雲端發票刮刮樂</a>
+                          <a href="screenshot.html" class="d-end">好運加碼抽</a>
+                      </div>
+                  </div>
+              </li>
+              <li class="nav-list nav4"><a href="win.html">得獎名單</a></li>
+              <li class="nav-list nav5"><a href="news.html">最新消息</a></li>
+              <li class="nav-list nav6"><a href="qa.html">常見問答</a></li>
+              <li class="nav-list nav7"><a href="link.html">相關連結</a></li>
+          </ul>
+          <a href="https://www.facebook.com/tpctax/" target="_blank" class="fb"></a>
+        </nav>
+        <div class="ham"></div>
+        <nav class="side">
+            <div class="x"></div>
+            <ul class="ham-wrap">
+                <li class="ham-list"><a href="index.html">活動首頁</a></li>
+                <li class="ham-list"><a style="cursor: context-menu;">會員專區</a>
+                    <div class="drop-down-wrap drop1">
+                        <div class="drop-down">
+                            <a href="register.html" class="d-start">活動註冊</a>
+                            <a href="login.html">活動登入</a>
+                            <a href="record.html">捐贈紀錄</a>
+                            <a href="member.html">兌獎紀錄</a>
+                            <a href="modify.html" class="d-end">會員資料修改</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="ham-list"><a style="cursor: context-menu;">參加活動</a>
+                    <div class="drop-down-wrap drop2">
+                        <div class="drop-down">
+                            <a href="method.html" class="d-start">活動辦法</a>
+                            <a href="donate.html">捐贈雲端發票</a>
+                            <a href="gift.html">積點換好禮</a>
+                            <a href="game.html">雲端發票刮刮樂</a>
+                            <a href="screenshot.html" class="d-end">好運加碼抽</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="ham-list nav4"><a href="win.html">得獎名單</a></li>
+                <li class="ham-list nav5"><a href="news.html">最新消息</a></li>
+                <li class="ham-list nav6"><a href="qa.html">常見問答</a></li>
+                <li class="ham-list nav7"><a href="link.html">相關連結</a></li>
+                <a href="https://www.facebook.com/tpctax/" target="_blank" class="ham-fb"></a>                
+            </ul>
+        </nav>
+        <div class="alert-wrap">
+            <div class="alert">您目前已捐贈發票 <span class="donate-num">XXX</span> 張，是否扣除 <span class="quota">4</span> 張雲端發票額度，參加刮刮樂遊戲？
+                <div class="sure">確認</div>
+                <div class="back" onclick="location.href='index.html';">回首頁</div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-title">雲端發票刮刮樂</div>
+            <article class="article">
+                <div class="article-bg">
+                    <div class="dog"></div>
+                    <div class="dialog"></div>
+                    <div class="ribbon"></div>
+                    <div class="eggs"></div>
+                </div>
+                <!-- 可以使用.game調整css， 兩個新增的id就保留，如果有需要調整#scratchcard再跟我說-->
+                <div class="game" id="scratchcardPos">
+                  <div id="scratchcard"></div>
+                </div>
+                <div class="remark">中獎序號請點閱"會員專區"下的"兌獎紀錄"</div>
+                <div class="btn-prize">獎品品項</div>
+                <div class="prize">
+                    <ul class="content-title">
+                        <li class="content" style="list-style: decimal; margin-left: 1.2em;">普通獎：全家便利商店茶葉蛋 2 顆兌換序號 1 組，共 <span>100</span> 名</li>
+                        <li class="content" style="list-style: decimal; margin-left: 1.2em;">愛心獎：全家便利商店 35 元 Fami 霜淇淋兌換序號 1 組，共 <span>100</span> 名</li>
+                        <li class="content" style="list-style: decimal; margin-left: 1.2em;">幸運獎：統一超商 45 元咖啡兌換序號 1 組，共 <span>100</span> 名</li>
+                        <li class="content" style="list-style: decimal; margin-left: 1.2em;">微笑獎：統一超商 50 元購物金兌換序號 1 組，共 <span>50</span> 名</li>
+                        <li class="content" style="list-style: decimal; margin-left: 1.2em;">好運獎：肯德基咔啦脆雞套餐[1 塊咔啦脆雞+1 份香酥脆薯(中)+1 杯百事可樂(中)]兌換序號 1 組，共<span>50</span>名</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        <div class="rank-wrap">
+            <div class="rank-title">捐贈排行榜</div>
+            <div class="rank">
+                <div class="text-wrap">
+                    <div class="text">目前累積最高前兩名捐贈數：</div>
+                    <div class="text">第一名 捐贈發票數 6000張</div>
+                    <div class="text">第二名 捐贈發票數 4000張</div>
+                </div>
+            </div>
+            <div class="x-wrap">
+                <div class="btn-x"></div>
+            </div>
+        </div>
+        <div class="ad">廣告</div>
+        <a href="index.html"><div class="copyright">© 臺北市稅捐稽徵處</div></a>
+        <div class="info"><span>10051臺北市中正區北平東路7之2號</span> <br><span>活動洽詢2394-9211分機162蔡小姐</span></div>
+        <div class="slogan">雲端發票存載具 多元兌獎超Easy</div>
+        <footer class="footer">
+          <a href="http://www.csidea.tw" target="_blank">網頁設計</a>by
+          <a href="https://www.csidea.org.tw" target="_blank">藝淇數位</a>
+      </footer>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./js/pixi-legacy.min.js"></script>
+    <script>
+      function scratchcardPrint(val) {
+        var serialNumber = val
+        var scratchcardPos = document.querySelector('#scratchcardPos')
+        var scratchcard = document.querySelector('#scratchcard')
+        scratchcardPos.style.background = 'url("") center center no-repeat'
+        scratchcard.style.width = '496px'
+        scratchcard.style.height = '287px'
+        scratchcard.style.position = 'absolute'
+        scratchcard.style.top = '50%'
+        scratchcard.style.left = '50%'
+        scratchcard.style.transform = 'translate(-50%, -50%)'
+  
+        function sizeInit(num) {
+          var w = 496 * num
+          var h = 287 * num
+  
+          scratchcard.style.width = ''.concat(w, 'px')
+          scratchcard.style.height = ''.concat(h, 'px')
+          scratchcard.style.position = 'absolute'
+          scratchcard.style.top = '50%'
+          scratchcard.style.left = '50%'
+          scratchcard.style.transform = 'translate(-50%, -50%)'
+        }
+  
+        var winW = window.innerWidth
+  
+        if (winW <= 1024) {
+          sizeInit(0.8)
+        }
+  
+        if (winW <= 420) {
+          sizeInit(0.6)
+        }
+  
+        window.addEventListener('resize', function () {
+          var winW = window.innerWidth
+  
+          if (winW > 1024) {
+            var w = 496 * 1
+            var h = 287 * 1
+            sizeInit(1)
+            app.renderer.resize(w, h)
+            return
+          } else if (winW > 420) {
+            var _w = 496 * 0.8
+  
+            var _h = 287 * 0.8
+  
+            sizeInit(0.8)
+            app.renderer.resize(_w, _h)
+            return
+          } else {
+            var _w2 = 496 * 0.6
+  
+            var _h2 = 287 * 0.6
+  
+            sizeInit(0.6)
+            app.renderer.resize(_w2, _h2)
+            return
+          }
+        })
+        var app = new PIXI.Application({
+          transparent: true,
+          resizeTo: scratchcard
+        })
+        
+        scratchcard.appendChild(app.view)
+        var stage = app.stage
+        var brush = new PIXI.Graphics()
+        brush.beginFill(0xffffff)
+        brush.drawCircle(0, 0, 30)
+        brush.endFill()
+        app.loader.add('t1', './images/scratchcard/scratchcard_cover.png')
+        app.loader.add('t2', './images/scratchcard/scratchcard_bg.png')
+        app.loader.load(setup)
+  
+        function setup(loader, resources) {
+          window.addEventListener('resize', function () {
+            var winW = window.innerWidth
+  
+            if (winW > 1024) {
+              resizeFn(1, 46)
+              return
+            } else if (winW > 420) {
+              resizeFn(0.8, 32)
+              return
+            } else {
+              resizeFn(0.6, 24)
+              return
+            }
+          })
+  
+          function resizeFn(num, fontSize) {
+            var w = 496 * num
+            var h = 287 * num
+            background.width = w
+            background.height = h
+            imageToReveal.width = w
+            imageToReveal.height = h
+            sn.x = w * 0.5
+            sn.y = h * 0.5
+            sn.style.fontSize = fontSize
+          }
+  
+          var background = new PIXI.Sprite(resources.t1.texture)
+          stage.addChild(background)
+          background.width = app.screen.width
+          background.height = app.screen.height
+          var imageToReveal = new PIXI.Sprite(resources.t2.texture)
+          stage.addChild(imageToReveal)
+          imageToReveal.width = app.screen.width
+          imageToReveal.height = app.screen.height
+          var renderTexture = PIXI.RenderTexture.create(app.screen.width, app.screen.height)
+          var sn = new PIXI.Text(serialNumber, {
+            fontSize: 46,
+            fill: '#007bbb'
+          })
+          sn.anchor.set(0.5)
+          sn.x = app.screen.width * 0.5
+          sn.y = app.screen.height * 0.5
+          stage.addChild(sn)
+          var winW = window.innerWidth
+  
+          if (winW <= 768) {
+            sn.style.fontSize = 32
+          }
+  
+          if (winW <= 420) {
+            sn.style.fontSize = 24
+          }
+  
+          var renderTextureSprite = new PIXI.Sprite(renderTexture)
+          stage.addChild(renderTextureSprite)
+          sn.mask = renderTextureSprite
+          imageToReveal.mask = renderTextureSprite
+          app.stage.interactive = true
+          app.stage.on('pointerdown', pointerDown)
+          app.stage.on('pointerup', pointerUp)
+          app.stage.on('pointermove', pointerMove)
+          var dragging = false
+  
+          function pointerMove(e) {
+            if (dragging) {
+              brush.position.copyFrom(e.data.global)
+              app.renderer.render(brush, renderTexture, false, null, false)
+            }
+          }
+  
+          function pointerDown(e) {
+            dragging = true
+            pointerMove(e)
+          }
+  
+          function pointerUp() {
+            dragging = false
+          }
+        }
+      }
+    </script>
+</body>
+</html>
